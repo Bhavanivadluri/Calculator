@@ -1,2 +1,1 @@
-# Calculator
-A simple, interactive calculator built using HTML, CSS, and JavaScript.
+A simple, interactive calculator built using HTML, CSS, and JavaScript. This project features a clean user interface with a display screen and functional buttons for basic arithmetic operations—addition, subtraction, multiplication, and division. The layout is styled using CSS Grid, and JavaScript handles user input, operations, and display updates. A great beginner project for practicing DOM manipulation and event handling.
