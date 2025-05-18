@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c7d1e4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Default button style */
+button {
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #10607d; /* Green */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #3d413e; /* Darker green */
+}
+
+/* Clear button */
+button:nth-child(1) {
+  background-color: #0b0b0b; /* Red */
+}
+
+button:nth-child(1):hover {
+  background-color: #0e0e0e;
+}
+
+/* Operator buttons (+, -, *, /) */
+button:nth-child(5),
+button:nth-child(9),
+button:nth-child(13),
+button:nth-child(17) {
+  background-color: #0f0f0f; /* Orange */
+}
+
+button:nth-child(5):hover,
+button:nth-child(9):hover,
+button:nth-child(13):hover,
+button:nth-child(17):hover {
+  background-color: #0c0c0c;
+}
+
+/* Equal button */
+button:nth-child(18) {
+  background-color: #2196f3; /* Blue */
+}
+
+button:nth-child(18):hover {
+  background-color: #1976d2;
+}
